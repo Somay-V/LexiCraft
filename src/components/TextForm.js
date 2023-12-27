@@ -73,6 +73,10 @@ export default function TextForm(props) {
     
     console.log(utterance.voice);
     window.speechSynthesis.speak(utterance);
+    var r = setInterval(function () {
+      if (!utterance.speaking) clearInterval(r);
+      else utterance.resume();
+  }, 14000);
   };
 
   const handlePause = () => {
