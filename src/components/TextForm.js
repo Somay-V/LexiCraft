@@ -141,27 +141,27 @@ export default function TextForm(props) {
         <button className="btn btn-primary" onClick={HandleUpClick}>
           Convert to Uppercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={HandleLoClick}>
+        <button className="btn btn-primary mx-2 my-1" onClick={HandleLoClick}>
           Convert to Lowercase
         </button>
-        <button className="btn btn-primary mx-2" onClick={HandleCopy}>
+        <button className="btn btn-primary mx-2 my-1" onClick={HandleCopy}>
           {Image} Copy to Clipboard
         </button>
-        <button className="btn btn-danger mx-2" onClick={HandleClear}>
+        <button className="btn btn-danger mx-2 my-1" onClick={HandleClear}>
           Clear
         </button>
-        <button className="btn btn-primary mx-2" onClick={HandleSpeak}>
+        <button className="btn btn-primary mx-2 my-1" onClick={HandleSpeak}>
           Speak
         </button>
         {isSpeaking && (
           <>
-            <button className="btn btn-primary mx-2" onClick={handlePause}>
+            <button className="btn btn-primary mx-2 my-1" onClick={handlePause}>
               Pause
             </button>
-            <button className="btn btn-primary mx-2" onClick={handleResume}>
+            <button className="btn btn-primary mx-2 my-1" onClick={handleResume}>
               Resume
             </button>
-            <button className="btn btn-danger mx-2" onClick={handleCancel}>
+            <button className="btn btn-danger mx-2 my-1" onClick={handleCancel}>
               Cancel
             </button>
           </>
